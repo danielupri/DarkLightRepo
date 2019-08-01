@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Moving : MonoBehaviour
+public class MovingPlatformTest : MonoBehaviour
 {
 
     private GameObject target = null;
