@@ -226,12 +226,12 @@ PrefabInstance:
     - target: {fileID: 2868138099308239729, guid: 640c43c2bea5c5b45a9c28e6c178ba21,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 2868138099308239729, guid: 640c43c2bea5c5b45a9c28e6c178ba21,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.2
+      value: 2.41
       objectReference: {fileID: 0}
     - target: {fileID: 2868138099308239729, guid: 640c43c2bea5c5b45a9c28e6c178ba21,
         type: 3}
@@ -290,6 +290,16 @@ PrefabInstance:
     - target: {fileID: 1290459257, guid: 640c43c2bea5c5b45a9c28e6c178ba21, type: 3}
       propertyPath: m_CollisionDetection
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630469482283360372, guid: 640c43c2bea5c5b45a9c28e6c178ba21,
+        type: 3}
+      propertyPath: jumpForce
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3630469482283360372, guid: 640c43c2bea5c5b45a9c28e6c178ba21,
+        type: 3}
+      propertyPath: isGroundedBuffer
+      value: 0.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640c43c2bea5c5b45a9c28e6c178ba21, type: 3}
