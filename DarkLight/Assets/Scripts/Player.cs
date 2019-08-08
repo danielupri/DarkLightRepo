@@ -9,12 +9,13 @@ public class Player : MonoBehaviour
     CharacterController controller;
     float inputDirection;
 
+
     //vertical movement variables
     float verticalVelocity;
     float gravity = 1;
     public float jumpForce = 10;
     public float isGroundedBuffer = 0.1f;
-    
+
 
     //horizontal movement variables
     float speed;
@@ -25,11 +26,14 @@ public class Player : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         speed = walkSpeed;
+
     }
 
+
+   
+
     void FixedUpdate()
-    {      
-        
+    {             
 
         //horizontal movement
         moveVector = Vector3.zero;
@@ -56,14 +60,15 @@ public class Player : MonoBehaviour
 
     private bool IsControllerGrounded()
     {
+
+        Bounds bounds;
+        bounds = controller.bounds;
         Vector3 leftRayStart;
         Vector3 rightRayStart;
 
-        leftRayStart = controller.bounds.center;
-        rightRayStart = controller.bounds.center;
-
-        leftRayStart.x -= controller.bounds.extents.x;
-        leftRayStart.x += controller.bounds.extents.x;
+        leftRayStart = new Vector3 (bounds.min.x, bounds.min.y,0);
+        rightRayStart = new Vector3(bounds.max.x, bounds.min.y, 0);    
+                
 
         Debug.DrawRay(leftRayStart, Vector3.down, Color.red);
         Debug.DrawRay(rightRayStart, Vector3.down, Color.green);

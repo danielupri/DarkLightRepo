@@ -278,18 +278,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3801941582982533615, guid: 640c43c2bea5c5b45a9c28e6c178ba21,
-        type: 3}
-      propertyPath: m_Height
-      value: 1.51
-      objectReference: {fileID: 0}
     - target: {fileID: 1290459257, guid: 640c43c2bea5c5b45a9c28e6c178ba21, type: 3}
       propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1290459257, guid: 640c43c2bea5c5b45a9c28e6c178ba21, type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3630469482283360372, guid: 640c43c2bea5c5b45a9c28e6c178ba21,
         type: 3}
@@ -299,7 +294,7 @@ PrefabInstance:
     - target: {fileID: 3630469482283360372, guid: 640c43c2bea5c5b45a9c28e6c178ba21,
         type: 3}
       propertyPath: isGroundedBuffer
-      value: 0.2
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 640c43c2bea5c5b45a9c28e6c178ba21, type: 3}
